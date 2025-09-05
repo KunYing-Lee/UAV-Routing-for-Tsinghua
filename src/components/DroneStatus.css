@@ -1,0 +1,240 @@
+.drone-status {
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  background: #f8f9fa;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.status-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.drone-count {
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.no-drones {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #7f8c8d;
+}
+
+.no-drones p {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.drone-icon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.drones-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.drone-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498db;
+}
+
+.drone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.drone-id {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.drone-status-badge {
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.drone-info {
+  margin-bottom: 0.75rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.info-label {
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.altitude {
+  font-weight: 700;
+}
+
+.path-info {
+  border-top: 1px solid #ecf0f1;
+  padding-top: 0.75rem;
+}
+
+.path-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.progress-value {
+  font-size: 0.8rem;
+  color: #2c3e50;
+  font-weight: 700;
+  background: #ecf0f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.progress-details {
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.detail-text {
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  font-style: italic;
+  background: #f8f9fa;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.status-summary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  margin-bottom: 0.25rem;
+}
+
+.summary-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* 滚动条样式 */
+.drones-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.drones-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.drones-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.drones-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 

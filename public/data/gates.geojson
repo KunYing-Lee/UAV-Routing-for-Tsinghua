@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "gates",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": {"name": "西南门"}, "geometry": { "type": "Point", "coordinates": [ 116.315005, 39.992125 ] } },
+{ "type": "Feature", "properties": {"name": "南门"}, "geometry": { "type": "Point", "coordinates": [ 116.322714, 39.993126 ] } },
+{ "type": "Feature", "properties": {"name": "东南门"}, "geometry": { "type": "Point", "coordinates": [ 116.326616, 39.995201 ] } },
+{ "type": "Feature", "properties": {"name": "东三门"}, "geometry": { "type": "Point", "coordinates": [ 116.330677, 40.00236 ] } },
+{ "type": "Feature", "properties": {"name": "东北门"}, "geometry": { "type": "Point", "coordinates": [ 116.329331, 40.008006 ] } },
+{ "type": "Feature", "properties": {"name": "北门"}, "geometry": { "type": "Point", "coordinates": [ 116.31622, 40.009702 ] } },
+{ "type": "Feature", "properties": {"name": "西北门"}, "geometry": { "type": "Point", "coordinates": [ 116.31224, 40.004739 ] } },
+{ "type": "Feature", "properties": {"name": "西门"}, "geometry": { "type": "Point", "coordinates": [ 116.309265, 39.998601 ] } }
+]
+}
